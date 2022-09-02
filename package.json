@@ -9,7 +9,7 @@
     "import": "./packages/components/dist/engine-ui.umd.js"
   },
   "files": [
-    "./packages/dist/*"
+    "./packages/components/dist/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
