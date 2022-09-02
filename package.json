@@ -1,6 +1,6 @@
 {
   "name": "engine-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "engine-ui.umd.js",
   "module": "engine-ui.mjs",
