@@ -1,0 +1,33 @@
+{
+  "name": "engine-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "test",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx only-allow pnpm",
+    "dev": "vite",
+    "docs:dev": "vitepress dev docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.38"
+  },
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.9",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-vue": "^9.4.0",
+    "typescript": "^4.8.2",
+    "unocss": "^0.45.14",
+    "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.4.1",
+    "vitepress": "1.0.0-alpha.8"
+  }
+}
