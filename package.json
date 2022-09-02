@@ -1,15 +1,15 @@
 {
   "name": "engine-ui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
-  "main": "./packages/components/dist/engine-ui.umd.js",
-  "module": "./packages/components/dist/engine-ui.mjs",
+  "main": "engine-ui.umd.js",
+  "module": "engine-ui.mjs",
   "repository": "test",
   "exports": {
-    "import": "./packages/components/dist/engine-ui.umd.js"
+    "import": "./engine-ui.umd.js"
   },
   "files": [
-    "./packages/components/dist/*"
+    "packages/components/dist/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
