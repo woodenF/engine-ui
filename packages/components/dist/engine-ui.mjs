@@ -20,7 +20,9 @@ const button = defineComponent({
       "class": `
           py-2
           px-4
-          bg-red-500
+          bg-pink-500
+          m-1
+          hover:bg-gray-500
         `
     }, [props.size, createTextVNode(" "), props.type]);
   }
