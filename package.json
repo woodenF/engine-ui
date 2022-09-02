@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "repository": "test",
+  "exports": {
+    "import": "./packages/components/dist/engine-ui.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npx only-allow pnpm",
