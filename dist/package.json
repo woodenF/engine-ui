@@ -1,6 +1,6 @@
 {
-  "name": "engine-plus",
-  "version": "1.0.9",
+  "name": "engine-ui",
+  "version": "1.0.10",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
