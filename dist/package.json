@@ -1,16 +1,7 @@
 {
   "name": "engine-ui",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "",
-  "main": "index.js",
-  "module": "index.esm.js",
-  "types": "es/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./index.esm.js",
-      "types": "./es/index.d.ts"
-    }
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
