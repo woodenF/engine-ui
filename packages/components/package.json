@@ -1,20 +1,12 @@
 {
   "name": "@engine-ui/components",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "vite build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@engine-ui/utils": "workspace:^1.0.0"
-  },
-  "devDependencies": {
-    "@iconify-json/ic": "^1.1.9",
-    "terser": "^5.15.0",
-    "unocss": "^0.45.14"
-  }
+  "license": "ISC"
 }
