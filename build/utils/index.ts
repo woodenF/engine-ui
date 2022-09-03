@@ -16,3 +16,11 @@ export const run = async (command: string) => {
     app.on('close', resolve);
   })
 }
+
+// 重写打包后的@w-plus 路径
+export const pathRewriter = (format) => {
+  return (id: string) => {
+    id = id.replaceAll("@engine-ui", `engine-ui/${format}`);
+    return id;
+  };
+};
