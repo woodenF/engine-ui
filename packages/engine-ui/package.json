@@ -1,11 +1,21 @@
 {
   "name": "engine-ui",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "types": "./es/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "",
