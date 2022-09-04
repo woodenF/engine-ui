@@ -7,8 +7,6 @@ import DefineOptions from 'unplugin-vue-define-options/rollup'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import esbuild, { minify as minifyPlugin } from 'rollup-plugin-esbuild'
 import { parallel } from 'gulp'
-import glob from 'fast-glob'
-import { camelCase, upperFirst } from 'lodash'
 import { version } from '../../packages/engine-ui/package.json';
 import type { Plugin } from 'rollup'
 import { uiOutput, uiRoot } from './paths'
@@ -144,7 +142,7 @@ async function buildFullEntry(minify: boolean) {
 // }
 
 export const buildFull = (minify: boolean) => async () =>
-  Promise.all([buildFullEntry(minify)]);
+  await buildFullEntry(minify);
   // Promise.all([buildFullEntry(minify), buildFullLocale(minify)])
 
 export const buildFullBundle = parallel(

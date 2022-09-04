@@ -6,6 +6,7 @@ import * as vueCompiler from 'vue/compiler-sfc'
 import glob from 'fast-glob'
 import chalk from 'chalk'
 import { Project } from 'ts-morph'
+
 import type { CompilerOptions, SourceFile } from 'ts-morph'
 import { buildOutput, pkgRoot, projRoot, uiRoot } from './paths'
 import { excludeFiles, pathRewriter } from './pkg'
@@ -85,13 +86,13 @@ async function addSourceFiles(project: Project) {
 
   const globSourceFile = '**/*.{js?(x),ts?(x),vue}'
   const filePaths = excludeFiles(
-    await glob([globSourceFile, '!engine-ui/**/*'], {
+    await glob([globSourceFile, '!element-plus/**/*'], {
       cwd: pkgRoot,
       absolute: true,
       onlyFiles: true,
     })
   )
-  const epPaths = excludeFiles(
+  const uiPaths = excludeFiles(
     await glob(globSourceFile, {
       cwd: uiRoot,
       onlyFiles: true,
@@ -130,7 +131,7 @@ async function addSourceFiles(project: Project) {
         sourceFiles.push(sourceFile)
       }
     }),
-    ...epPaths.map(async (file) => {
+    ...uiPaths.map(async (file) => {
       const content = await readFile(path.resolve(uiRoot, file), 'utf-8')
       sourceFiles.push(
         project.createSourceFile(path.resolve(pkgRoot, file), content)

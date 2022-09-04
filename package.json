@@ -19,6 +19,7 @@
     "components-helper": "^2.1.0",
     "consola": "^2.15.3",
     "fast-glob": "^3.2.11",
+    "fs-extra": "^10.1.0",
     "gulp": "^4.0.2",
     "lodash": "^4.17.21",
     "rimraf": "^3.0.2",
