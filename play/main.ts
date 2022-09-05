@@ -1,6 +1,8 @@
 import { createApp } from "vue"
-import { Icon } from "../dist/engine-ui/es/index.mjs";
-import App from './app.vue'
+import App from './app.vue';
+import { Icon } from 'engine-ui';
+import 'engine-ui/theme-chalk/index.css';
 
-const app = createApp(App).component('Icon', Icon);
-app.mount('#app')
+createApp(App)
+  .component('Icon', Icon)
+  .mount('#app')

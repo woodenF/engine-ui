@@ -26,8 +26,8 @@ export const pathRewriter = (module: Module) => {
   const config = buildConfig[module];
 
   return (id: string) => {
-    id = id.replaceAll(`@engine-uiplus/theme-chalk`, `engine-ui/theme-chalk`)
-    id = id.replaceAll(`@element-plus/`, `${config.bundle.path}/`)
+    id = id.replaceAll(`@engine-ui/theme-chalk`, `engine-ui/theme-chalk`)
+    id = id.replaceAll(`@engine-ui/`, `${config.bundle.path}/`)
     return id
   }
 }

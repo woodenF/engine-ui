@@ -1,4 +1,4 @@
-declare const Icon: import("@engine-ui/utils/with-install").SFCWithInstall<import("vue").DefineComponent<{
+declare const Icon: import("engine-ui/es/utils/with-install").SFCWithInstall<import("vue").DefineComponent<{
     readonly size: {
         readonly type: NumberConstructor;
     };

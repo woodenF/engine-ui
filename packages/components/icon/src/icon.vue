@@ -9,7 +9,7 @@ import { computed, defineComponent } from "vue";
 import { iconProps } from "./icon";
 
 export default defineComponent({
-  name: "WIcon",
+  name: "Icon",
   props: iconProps,
   setup(props) {
     const style = computed(() => {

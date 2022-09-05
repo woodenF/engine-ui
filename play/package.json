@@ -2,7 +2,7 @@
   "name": "play",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.ts",
   "scripts": {
     "dev": "vite"
   },
@@ -12,5 +12,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
     "vite": "^3.0.9"
+  },
+  "dependencies": {
+    "engine-ui": "^1.0.23"
   }
 }

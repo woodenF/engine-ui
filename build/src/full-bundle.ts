@@ -12,6 +12,7 @@ import type { Plugin } from 'rollup'
 import { uiOutput, uiRoot } from './paths'
 import { formatBundleFilename, generateExternal, writeBundles } from './rollup'
 import { withTaskName } from './gulp'
+import type { TaskFunction } from 'gulp'
 
 const banner = `/*! ${'EngineUI'} v${version} */\n`
 
@@ -145,7 +146,7 @@ export const buildFull = (minify: boolean) => async () =>
   await buildFullEntry(minify);
   // Promise.all([buildFullEntry(minify), buildFullLocale(minify)])
 
-export const buildFullBundle = parallel(
+export const buildFullBundle: TaskFunction = parallel(
   withTaskName('buildFullMinified', buildFull(true)),
   withTaskName('buildFull', buildFull(false))
 )

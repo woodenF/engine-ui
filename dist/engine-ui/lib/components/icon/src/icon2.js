@@ -7,7 +7,7 @@ var icon$1 = require('./icon.js');
 var pluginVue_exportHelper = require('../../../_virtual/plugin-vue_export-helper.js');
 
 const _sfc_main = vue.defineComponent({
-  name: "WIcon",
+  name: "Icon",
   props: icon$1.iconProps,
   setup(props) {
     const style = vue.computed(() => {

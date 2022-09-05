@@ -3,7 +3,7 @@
 import { defineComponent, computed, openBlock, createElementBlock, normalizeStyle, renderSlot } from 'vue';
 
 const withInstall = (comp) => {
-  comp.install = function(app) {
+  comp.install = (app) => {
     app.component(comp.name, comp);
   };
   return comp;
@@ -27,7 +27,7 @@ var _export_sfc = (sfc, props) => {
 };
 
 const _sfc_main = defineComponent({
-  name: "WIcon",
+  name: "Icon",
   props: iconProps,
   setup(props) {
     const style = computed(() => {

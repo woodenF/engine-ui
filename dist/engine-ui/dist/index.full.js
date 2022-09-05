@@ -7,7 +7,7 @@
 })(this, (function (exports, vue) { 'use strict';
 
   const withInstall = (comp) => {
-    comp.install = function(app) {
+    comp.install = (app) => {
       app.component(comp.name, comp);
     };
     return comp;
@@ -31,7 +31,7 @@
   };
 
   const _sfc_main = vue.defineComponent({
-    name: "WIcon",
+    name: "Icon",
     props: iconProps,
     setup(props) {
       const style = vue.computed(() => {

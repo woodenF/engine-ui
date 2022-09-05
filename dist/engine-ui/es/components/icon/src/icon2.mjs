@@ -3,7 +3,7 @@ import { iconProps } from './icon.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 
 const _sfc_main = defineComponent({
-  name: "WIcon",
+  name: "Icon",
   props: iconProps,
   setup(props) {
     const style = computed(() => {

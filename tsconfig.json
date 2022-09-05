@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "target": "es2018",
+    "target": "es2021",
     "module": "esnext",
     "baseUrl": ".",
     "sourceMap": false,
@@ -20,12 +20,15 @@
     },
     "composite": true,
     "jsx": "preserve",
-    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "skipLibCheck": true
   },
-  "include": ["packages", "typings/components.d.ts", "typings/env.d.ts"],
+  "include": [
+    "packages/engine-ui/package.json",
+    "*/**/*",
+    "*/node_modules/**/*"
+  ],
   "exclude": [
-    "node_modules",
     "**/dist",
     "**/__tests__/**/*",
     "**/gulpfile.ts",
