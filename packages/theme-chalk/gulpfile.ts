@@ -27,8 +27,8 @@ function buildThemeChalk() {
       cleanCSS({}, (details) => {
         consola.success(
           `${chalk.cyan(details.name)}: ${chalk.yellow(
-            details.stats.originalSize / 1000
-          )} KB -> ${chalk.green(details.stats.minifiedSize / 1000)} KB`
+            (details.stats.originalSize / 1000) + ''
+          )} KB -> ${chalk.green((details.stats.minifiedSize / 1000) + '')} KB`
         )
       })
     )
@@ -43,28 +43,7 @@ function buildThemeChalk() {
 }
 
 /**
- * Build dark Css Vars
- * @returns
- */
-// function buildDarkCssVars() {
-//   const sass = gulpSass(dartSass)
-//   return src(path.resolve(__dirname, 'src/dark/css-vars.scss'))
-//     .pipe(sass.sync())
-//     .pipe(autoprefixer({ cascade: false }))
-//     .pipe(
-//       cleanCSS({}, (details) => {
-//         consola.success(
-//           `${chalk.cyan(details.name)}: ${chalk.yellow(
-//             details.stats.originalSize / 1000
-//           )} KB -> ${chalk.green(details.stats.minifiedSize / 1000)} KB`
-//         )
-//       })
-//     )
-//     .pipe(dest(`${distFolder}/dark`))
-// }
-
-/**
- * copy from packages/theme-chalk/dist to dist/element-plus/theme-chalk
+ * copy from packages/theme-chalk/dist to dist/engine-ui/theme-chalk
  */
 export function copyThemeChalkBundle() {
   return src(`${distFolder}/**`).pipe(dest(distBundle))

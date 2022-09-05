@@ -29,7 +29,6 @@
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "dayjs": "^1.11.3"
   },
   "keywords": [],
   "author": "",

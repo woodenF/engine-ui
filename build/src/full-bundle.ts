@@ -95,56 +95,8 @@ async function buildFullEntry(minify: boolean) {
   ])
 }
 
-// async function buildFullLocale(minify: boolean) {
-//   const files = await glob(`${path.resolve(localeRoot, 'lang')}/*.ts`, {
-//     absolute: true,
-//   })
-//   return Promise.all(
-//     files.map(async (file) => {
-//       const filename = path.basename(file, '.ts')
-//       const name = upperFirst(camelCase(filename))
-
-//       const bundle = await rollup({
-//         input: file,
-//         plugins: [
-//           esbuild({
-//             minify,
-//             sourceMap: minify,
-//             target: 'ES2018',
-//           }),
-//         ],
-//       })
-//       await writeBundles(bundle, [
-//         {
-//           format: 'umd',
-//           file: path.resolve(
-//             epOutput,
-//             'dist/locale',
-//             formatBundleFilename(filename, minify, 'js')
-//           ),
-//           exports: 'default',
-//           name: `EnginUILocale${name}`,
-//           sourcemap: minify,
-//           banner,
-//         },
-//         {
-//           format: 'esm',
-//           file: path.resolve(
-//             epOutput,
-//             'dist/locale',
-//             formatBundleFilename(filename, minify, 'mjs')
-//           ),
-//           sourcemap: minify,
-//           banner,
-//         },
-//       ])
-//     })
-//   )
-// }
-
 export const buildFull = (minify: boolean) => async () =>
   await buildFullEntry(minify);
-  // Promise.all([buildFullEntry(minify), buildFullLocale(minify)])
 
 export const buildFullBundle: TaskFunction = parallel(
   withTaskName('buildFullMinified', buildFull(true)),

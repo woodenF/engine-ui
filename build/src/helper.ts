@@ -5,27 +5,19 @@ import type { TaskFunction } from 'gulp'
 import type {
   ReAttribute,
   ReComponentName,
-  ReDocUrl,
   ReWebTypesSource,
 } from 'components-helper'
 import { getPackageManifest } from './pkg'
 import { projRoot, uiOutput, uiPackage } from './paths'
 
 const reComponentName: ReComponentName = (title: string) =>
-  `el-${title
+  `en-${title
     .replace(/\B([A-Z])/g, '-$1')
     .replace(/[ ]+/g, '-')
-    .toLowerCase()}`
-
-const reDocUrl: ReDocUrl = (fileName, header) => {
-  const docs = 'https://element-plus.org/en-US/component/'
-  const _header = header ? header.replaceAll(/\s+/g, '-').toLowerCase() : ''
-
-  return `${docs}${fileName}.html${_header ? '#' : ''}${_header}`
-}
+    .toLowerCase()}`;
 
 const reWebTypesSource: ReWebTypesSource = (title) => {
-  const symbol = `El${title
+  const symbol = `En${title
     .replaceAll(/-/g, ' ')
     .replaceAll(/^\w|\s+\w/g, (item) => {
       return item.trim().toUpperCase()
@@ -94,11 +86,10 @@ export const buildHelper: TaskFunction = (done) => {
     version: _version,
     entry: `${path.resolve(
       projRoot,
-      'docs/en-US/component'
+      'docs/component'
     )}/!(datetime-picker|message-box|message).md`,
     outDir: uiOutput,
     reComponentName,
-    reDocUrl,
     reWebTypesSource,
     reAttribute,
     props: 'Attributes',
