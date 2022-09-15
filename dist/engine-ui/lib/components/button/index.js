@@ -3,10 +3,10 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var withInstall = require('../../utils/with-install.js');
-var icon = require('./src/icon.js');
+var button = require('./src/button2.js');
 
-const Icon = withInstall.withInstall(icon["default"]);
+const Button = withInstall.withInstall(button["default"]);
 
-exports.Icon = Icon;
-exports["default"] = Icon;
+exports.Button = Button;
+exports["default"] = Button;
 //# sourceMappingURL=index.js.map

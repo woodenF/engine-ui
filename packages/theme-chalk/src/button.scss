@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use './mixins/mixins.scss' as *;
+
+$button-icon-span-gap: () !default;
+$button-icon-span-gap: map.merge(
+  (
+    'large': 8px,
+    'default': 6px,
+    'small': 4px,
+  ),
+  $button-icon-span-gap
+);
+
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+@include b(button) {
+  display: flex;
+  @include when(round) {
+    border-radius: 24px;
+  }
+
+  @include when(active) {
+    color: red;
+    background: pink;
+  }
+}

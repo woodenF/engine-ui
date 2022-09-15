@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":["../../../packages/engine-ui/index.ts"],"sourcesContent":["export * from '@engine-ui/components';\r\n\r\nexport default {\r\n  install() {}\r\n}"],"names":[],"mappings":";;;;;;;AAEA,YAAe;AAAA,EACb,OAAU,GAAA;AAAA,GAAC;AACb,CAAA;;;;;"}
+{"version":3,"file":"index.js","sources":["../../../packages/engine-ui/index.ts"],"sourcesContent":["export * from '@engine-ui/components';\r\n\r\nexport default {\r\n  install() {}\r\n}"],"names":[],"mappings":";;;;;;;;AAEA,YAAe;AAAA,EACb,OAAU,GAAA;AAAA,GAAC;AACb,CAAA;;;;;;"}

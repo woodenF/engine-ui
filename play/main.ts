@@ -1,8 +1,10 @@
 import { createApp } from "vue"
 import App from './app.vue';
-import { Icon } from 'engine-ui';
-import 'engine-ui/theme-chalk/index.css';
+import { Button, Icon } from "@engine-ui/components";
+import '@engine-ui/theme-chalk/src/index.scss';
 
 createApp(App)
   .component('Icon', Icon)
+  .use(Button)
+  .use(Icon)
   .mount('#app')

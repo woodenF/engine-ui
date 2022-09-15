@@ -14,7 +14,9 @@
     "esModuleInterop": true,
     "removeComments": false,
     "rootDir": ".",
-    "types": [],
+    "types": [
+      "unplugin-vue-define-options/macros-global"
+    ],
     "paths": {
       "@engine-ui/*": ["packages/*"]
     },

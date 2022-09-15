@@ -1,5 +1,5 @@
 import { withInstall } from '../../utils/with-install.mjs';
-import icon from './src/icon2.mjs';
+import icon from './src/icon.mjs';
 
 const Icon = withInstall(icon);
 
