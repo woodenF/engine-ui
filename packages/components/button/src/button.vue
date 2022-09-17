@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-import { ButtonProps } from './button';
+import { buttonProps } from './button';
 
 defineOptions({
   name: 'Button'
 });
 
-const props = defineProps<ButtonProps>();
-
+const props = defineProps(buttonProps);
 </script>
 
 <template>
