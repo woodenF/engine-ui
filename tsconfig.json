@@ -7,6 +7,9 @@
     "strict": true,                                      /* Enable all strict type-checking options. */
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "moduleResolution": "node",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "types": [
+      "unplugin-vue-define-options/macros-global"
+    ],
   }
 }

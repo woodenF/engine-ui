@@ -53,7 +53,7 @@ module.exports = {
     // 块语句中的内容不能为空
     'no-empty': 2,
     // 禁止非必要的括号
-    'no-extra-parens': 2,
+    'no-extra-parens': 0,
     // 禁止多余的空格
     'no-multi-spaces': 2,
     // 空行不超过一行
