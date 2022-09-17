@@ -9,9 +9,11 @@ export default series(
   withTaskName('createOutput', () => mkdir(uiOutput, { recursive: true })),
   parallel(
     runTask('buildModules'),
-    runTask('buildFullBundle')
+    runTask('buildFullBundle'),
+    runTask('generateTypesDefinitions')
   )
 );
 
 export * from './src/modules';
 export * from './src/full-bundle';
+export * from './src/type-definition';

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "target": "es2021",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "ESNext",                                /* Specify what module code is generated. */
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
@@ -11,6 +12,16 @@
     "types": [
       "unplugin-vue-define-options/macros-global"
     ],
+    "baseUrl": ".",
+    "composite": true,
+    "paths": {
+      "@engine-ui/*": ["packages/*"]
+    },
     "resolveJsonModule": true
-  }
+  },
+  "exclude": [
+    "**/dist",
+    "**/gulpfile.ts",
+    "**/*.md"
+  ]
 }

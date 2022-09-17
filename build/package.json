@@ -12,8 +12,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^14.1.0",
+    "chalk": "2.4.2",
+    "consola": "^2.15.3",
     "fast-glob": "^3.2.12",
     "rollup": "^2.79.0",
-    "rollup-plugin-esbuild": "^4.10.1"
+    "rollup-plugin-esbuild": "^4.10.1",
+    "ts-morph": "^16.0.0"
   }
 }
