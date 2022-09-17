@@ -8,8 +8,10 @@ export default series(
   withTaskName('clean', () => run('pnpm run clean')),
   withTaskName('createOutput', () => mkdir(uiOutput, { recursive: true })),
   parallel(
-    runTask('buildModules')
+    runTask('buildModules'),
+    runTask('buildFullBundle')
   )
 );
 
 export * from './src/modules';
+export * from './src/full-bundle';
