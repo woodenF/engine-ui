@@ -11,8 +11,8 @@ const props = defineProps(buttonProps);
 <template>
   <button
     :class="[
-      `en-${props.type}`,
-      `en-${props.size}`
+      `en-button-${props.type}`,
+      `en-button-${props.size}`
     ]"
   >
     <slot></slot>

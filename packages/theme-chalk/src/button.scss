@@ -1,0 +1,26 @@
+@use './mixins/mixins.scss' as *;
+
+.#{$namespace}-button-default{
+  background: blue;
+  color: #fff;
+}
+
+.#{$namespace}-button-primary{
+  background: greenyellow;
+  color: #fff;
+}
+
+.#{$namespace}-button-success{
+  background: green;
+  color: #fff;
+}
+
+.#{$namespace}-button-warning{
+  background: yellow;
+  color: #fff;
+}
+
+.#{$namespace}-button-danger{
+  background: red;
+  color: #fff;
+}
