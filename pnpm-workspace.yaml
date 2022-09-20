@@ -2,3 +2,4 @@ packages:
   - "packages/**"
   - build
   - play
+  - docs

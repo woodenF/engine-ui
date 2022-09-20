@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "",
   "scripts": {
     "dev": "pnpm run -C play dev",
+    "dev:docs": "vitepress dev docs",
     "build": "gulp -f build/gulpfile.ts",
     "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
     "clean:dist": "rimraf dist"
@@ -27,7 +29,8 @@
     "sucrase": "^3.27.0",
     "typescript": "^4.8.3",
     "unplugin-vue-define-options": "^0.11.2",
-    "vite": "^3.1.2"
+    "vite": "^3.1.2",
+    "vitepress": "1.0.0-alpha.8"
   },
   "dependencies": {
     "@engine-ui/components": "workspace:^1.0.0",
