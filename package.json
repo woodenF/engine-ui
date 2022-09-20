@@ -35,6 +35,7 @@
   "dependencies": {
     "@engine-ui/components": "workspace:^1.0.0",
     "@engine-ui/theme-chalk": "workspace:^1.0.0",
+    "@engine-ui/tokens": "workspace:^1.0.0",
     "@engine-ui/utils": "workspace:^1.0.0",
     "vue": "^3.2.39"
   }

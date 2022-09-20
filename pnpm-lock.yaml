@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@engine-ui/components': workspace:^1.0.0
       '@engine-ui/theme-chalk': workspace:^1.0.0
+      '@engine-ui/tokens': workspace:^1.0.0
       '@engine-ui/utils': workspace:^1.0.0
       '@pnpm/types': ^8.5.0
       '@types/gulp': ^4.0.9
@@ -27,6 +28,7 @@ importers:
     dependencies:
       '@engine-ui/components': link:packages/components
       '@engine-ui/theme-chalk': link:packages/theme-chalk
+      '@engine-ui/tokens': link:packages/tokens
       '@engine-ui/utils': link:packages/utils
       vue: 3.2.39
     devDependencies:
