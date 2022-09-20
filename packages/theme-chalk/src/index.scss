@@ -1,2 +1,81 @@
 @use './button.scss';
 @use './button-group.scss';
+
+// common
+:root{
+  --base--color: #fff;
+  --primary--color: #59ABF2;
+  --primary--color--hover: #95cbf9;
+  --primary--color--pressed: #a3efc4;
+  --info--color: #2080f0;
+  --info--color--hover: #4098fc;
+  --info--color--pressed: #1060c9;
+  --success--color: #18a058;
+  --success--color--hover: #36ad6a;
+  --success--color--pressed: #0c7a43;
+  --warning--color: #f0a020;
+  --warning--color--hover: #fcb040;
+  --warning--color--pressed: #c97c10;
+  --error--color: #d03050;
+  --error--color--hover: #de576d;
+  --error--color--pressed: #ab1f3f;
+
+  --text--color--base: #000;
+  --text--color--y: rgba(31, 34, 37);
+  --text--color--2: rgba(51, 54, 57);
+  --text--color--3: rgba(118, 124, 130);
+  --text--color--disabled: rgba(194, 194, 194, 1);
+  --placeholder--color: rgba(194, 194, 194, 1);
+  --icon--color: rgba(194, 194, 194, 1);
+  --icon--color--hover: rgba(215, 47, 47, 1);
+  --icon--color--pressed: rgba(175, 175, 175, 1);
+  --icon--color--disabled: rgba(209, 209, 209, 1);
+
+  --divider--color: rgba(239, 239, 245, 1);
+  --border--color: rgba(224, 224, 230, 1);
+
+  --close--icon--color: rgba(102, 102, 102, 1);
+  --close--icon--color--hover: rgba(102, 102, 102, 1);
+  --close--icon--color--pressed: rgba(102, 102, 102, 1);
+  
+  --height--mini: 16px;
+  --height--tiny: 22px;
+  --height--small: 28px;
+  --height--medium: 34px;
+  --height--large: 40px;
+
+
+  --common--default--color: #ccc;
+  --common--primary--color: #99CCFF;
+  --common--success--color: #009966;
+  --common--info--color: #666;
+  --common--warning--color: #FFCC33;
+  --common--danger--color: #CC0033;
+}
+
+// button
+:root{
+  --button--default--bg--color: var(--base--color);
+  --button--primary--bg--color: var(--primary--color);
+  --button--primary--bg--color--hover: var(--primary--color--hover);
+  --button--primary--bg--color--pressed: var(--primary--color--pressed);
+  --button--info--bg--color: var(--info--color);
+  --button--info--bg--color--hover: var(--info--color--hover);
+  --button--info--bg--color--pressed: var(--info--color--pressed);
+  --button--success--bg--color: var(--success--color);
+  --button--success--bg--color--hover: var(--success--color--hover);
+  --button--success--bg--color--pressed: var(--success--color--pressed);
+  --button--warning--bg--color: var(--warning--color);
+  --button--warning--bg--color--hover: var(--warning--color--hover);
+  --button--warning--bg--color--pressed: var(--warning--color--pressed);
+  --button--error--bg--color: var(--error--color);
+  --button--error--bg--color--hover: var(--error--color--hover);
+  --button--error--bg--color--pressed: var(--error--color--pressed);
+
+  --button--height--mini: var(--height--mini);
+  --button--height--tiny: var(--height--tiny);
+  --button--height--small: var(--height--small);
+  --button--height--medium: var(--height--medium);
+  --button--height--large: var(--height--large);
+
+}

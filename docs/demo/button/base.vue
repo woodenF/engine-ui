@@ -8,17 +8,20 @@ import { Button, ButtonGroup } from '@engine-ui/components';
       type="default"
       size="small"
     >
-      <Button type="primary">
-        Primary Button
+      <Button>
+        Default
       </Button>
-      <Button type="default">
-        Default Button
+      <Button type="primary">
+        Primary
       </Button>
       <Button type="success">
-        Success Button
+        Success
       </Button>
       <Button type="warning">
-        Warning Button
+        Warning
+      </Button>
+      <Button type="error">
+        Error
       </Button>
     </ButtonGroup>
   </div>

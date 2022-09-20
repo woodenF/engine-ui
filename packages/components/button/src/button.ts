@@ -4,14 +4,16 @@ export const ButtonType = [
   'default',
   'primary',
   'success',
+  'info',
   'warning',
-  'danger'
+  'error'
 ];
 
 export const ButtonSize = [
   'large',
-  'normal',
+  'medium',
   'small',
+  'tiny',
   'mini'
 ];
 

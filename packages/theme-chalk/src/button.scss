@@ -1,26 +1,46 @@
 @use './mixins/mixins.scss' as *;
 
-.#{$namespace}-button-default{
-  background: blue;
-  color: #fff;
-}
+@include b(button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  white-space: nowrap;
+  line-height: 1;
+  padding: 0  12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  &--default {
+    color: var(--text--color--1);
+    border: 1px solid var(--border--color);
+  }
+  &--default:hover{
+    border-color: var(--primary--color--hover);
+    color: var(--primary--color);
+  }
+  &--default:active{
+    background-color: var(--primary--color--hover);
+    color: var(--base--color);
+  }
+  
+  @each $type in (primary, success, info, warning, error) {
+    @include m($type) {
+      color: var(--base--color);
+      background-color: var(--button--#{$type}--bg--color);
+      &:hover{
+        color: var(--base--color);
+        background-color: var(--button--#{$type}--bg--color--hover);
+      }
+      &:active{
+        color: var(--base--color);
+        background-color: var(--button--#{$type}--bg--color--pressed);
+      }
+    }
+  }
 
-.#{$namespace}-button-primary{
-  background: greenyellow;
-  color: #fff;
-}
-
-.#{$namespace}-button-success{
-  background: green;
-  color: #fff;
-}
-
-.#{$namespace}-button-warning{
-  background: yellow;
-  color: #fff;
-}
-
-.#{$namespace}-button-danger{
-  background: red;
-  color: #fff;
+  @each $size in (mini, tiny, small, medium, large) {
+    @include m($size) {
+      height: var(--button--height--#{$size})
+    }
+  }
 }
